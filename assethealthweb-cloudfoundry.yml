@@ -13,18 +13,13 @@
 eureka:
     instance:
         prefer-ip-address: false
-        hostname: ${vcap.application.uris[0]}
-        nonSecurePort: 80
+#        hostname: ${vcap.application.uris[0]}
+#        nonSecurePort: 80
 logging:
     level:
         com.bmcd.asset.health.uaa: DEBUG
         io.github.jhipster: DEBUG
-spring:
-    data:
-        jest:
-             uri: https://cloudfoundry:3501689820b8c9230b65cb14a41eb48d@thorin-us-east-1.searchly.com
-liquibase:
-        contexts: demo
-jhipster:
-    registry:
-        password: GoshawkRules!
+#spring:
+#    data:
+#        jest:
+#             uri: https://cloudfoundry:3501689820b8c9230b65cb14a41eb48d@thorin-us-east-1.searchly.com
