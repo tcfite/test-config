@@ -15,8 +15,8 @@ server:
 eureka:
     instance:
         prefer-ip-address: false
-        hostname: ${vcap.application.uris[0]}
-        nonSecurePort: 80
+#        hostname: ${vcap.application.uris[0]}
+#        nonSecurePort: 80
 logging:
     level:
         com.bmcd.asset.health.uaa: DEBUG
@@ -24,13 +24,6 @@ logging:
 spring:
     data:
         jest:
-             uri: https://cloudfoundry:3501689820b8c9230b65cb14a41eb48d@thorin-us-east-1.searchly.com
-    datasource:
-        url:    jdbc:postgresql://unileverstage.cb6vzxzeeppe.eu-west-1.rds.amazonaws.com:5432/assethealth?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory
-        username: assethealth
-        password: 
+             uri: https://cloudfoundry:ab9d4b19be507c6797ce962f4f991750@thorin-us-east-1.searchly.com
 liquibase:
         contexts: demo
-jhipster:
-    registry:
-        password: GoshawkRules!
